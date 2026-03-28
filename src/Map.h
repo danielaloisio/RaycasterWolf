@@ -1,7 +1,7 @@
-#ifndef MAP_HPP
-#define MAP_HPP
-#include "Color.hpp"
-#include "GameConfig.hpp"
+#ifndef MAP_H
+#define MAP_H
+#include "Color.h"
+#include "GameConfig.h"
 
 class Map {
 public:
@@ -13,7 +13,7 @@ public:
     static Color wallColor(int type, bool dark);
 
 private:
-    static constexpr int DATA[GameConfig::MAP_H][GameConfig::MAP_W] = {
+    static constexpr int DATA[GameConfig::MAP_HEIGHT][GameConfig::MAP_WIDTH] = {
         {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
         {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
         {1,0,2,2,0,0,0,3,3,0,0,4,0,4,0,1},

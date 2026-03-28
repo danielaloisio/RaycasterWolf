@@ -1,11 +1,11 @@
-#ifndef RENDERER_HPP
-#define RENDERER_HPP
+#ifndef RENDERER_H
+#define RENDERER_H
 #include <SDL2/SDL.h>
 #include <vector>
-#include "Player.hpp"
-#include "Map.hpp"
-#include "Enemy.hpp"
-#include "ZBuffer.hpp"
+#include "Player.h"
+#include "Map.h"
+#include "Enemy.h"
+#include "ZBuffer.h"
 
 class Renderer {
 public:

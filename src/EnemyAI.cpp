@@ -1,5 +1,5 @@
-#include "EnemyAI.hpp"
-#include "GameConfig.hpp"
+#include "EnemyAI.h"
+#include "GameConfig.h"
 #include <cmath>
 #include <cstdlib>
 

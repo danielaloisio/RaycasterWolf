@@ -1,10 +1,10 @@
-#ifndef ENEMYAI_HPP
-#define ENEMYAI_HPP
+#ifndef ENEMYAI_H
+#define ENEMYAI_H
 #include <vector>
-#include "Enemy.hpp"
-#include "Player.hpp"
-#include "Map.hpp"
-#include "ZBuffer.hpp"
+#include "Enemy.h"
+#include "Player.h"
+#include "Map.h"
+#include "ZBuffer.h"
 
 class EnemyAI {
 public:

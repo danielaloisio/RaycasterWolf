@@ -1,5 +1,5 @@
-#ifndef ZBUFFER_HPP
-#define ZBUFFER_HPP
+#ifndef ZBUFFER_H
+#define ZBUFFER_H
 #include <vector>
 #include <algorithm>
 
