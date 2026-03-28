@@ -1,11 +1,11 @@
-#ifndef GAME_HPP
-#define GAME_HPP
+#ifndef GAME_H
+#define GAME_H
 #include <vector>
-#include "Map.hpp"
-#include "Player.hpp"
-#include "Enemy.hpp"
-#include "ZBuffer.hpp"
-#include "Renderer.hpp"
+#include "Map.h"
+#include "Player.h"
+#include "Enemy.h"
+#include "ZBuffer.h"
+#include "Renderer.h"
 
 class Game {
 public:

@@ -1,6 +1,6 @@
-#include "Game.hpp"
-#include "EnemyAI.hpp"
-#include "GameConfig.hpp"
+#include "Game.h"
+#include "EnemyAI.h"
+#include "GameConfig.h"
 #include <SDL2/SDL.h>
 #include <cmath>
 

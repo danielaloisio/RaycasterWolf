@@ -1,4 +1,4 @@
-#include "Sprite.hpp"
+#include "Sprite.h"
 
 const char* ENEMY_ALIVE[24] = {
     "........HHHHHH..........",

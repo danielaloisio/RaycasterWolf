@@ -1,5 +1,5 @@
-#ifndef ENEMY_HPP
-#define ENEMY_HPP
+#ifndef ENEMY_H
+#define ENEMY_H
 
 enum class EnemyState { PATROL, CHASE, DEAD };
 

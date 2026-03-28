@@ -1,6 +1,6 @@
-#include "Renderer.hpp"
-#include "GameConfig.hpp"
-#include "Sprite.hpp"
+#include "Renderer.h"
+#include "GameConfig.h"
+#include "Sprite.h"
 #include <cmath>
 #include <algorithm>
 

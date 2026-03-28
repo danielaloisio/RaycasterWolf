@@ -1,12 +1,12 @@
-#include "Map.hpp"
+#include "Map.h"
 #include <cmath>
 #include <initializer_list>
 
-constexpr int Map::DATA[GameConfig::MAP_H][GameConfig::MAP_W];
+constexpr int Map::DATA[GameConfig::MAP_HEIGHT][GameConfig::MAP_WIDTH];
 
 bool Map::inBounds(int mx, int my) const {
-    return mx >= 0 && mx < GameConfig::MAP_W &&
-           my >= 0 && my < GameConfig::MAP_H;
+    return mx >= 0 && mx < GameConfig::MAP_WIDTH &&
+           my >= 0 && my < GameConfig::MAP_HEIGHT;
 }
 
 int Map::tileAt(int mx, int my) const {

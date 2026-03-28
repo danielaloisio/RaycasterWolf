@@ -1,6 +1,6 @@
-#ifndef SPRITE_HPP
-#define SPRITE_HPP
-#include "Color.hpp"
+#ifndef SPRITE_H
+#define SPRITE_H
+#include "Color.h"
 
 struct Sprite {
     const char* const* rows;

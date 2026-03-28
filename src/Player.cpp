@@ -1,5 +1,5 @@
-#include "Player.hpp"
-#include "GameConfig.hpp"
+#include "Player.h"
+#include "GameConfig.h"
 #include <SDL2/SDL.h>
 #include <cmath>
 

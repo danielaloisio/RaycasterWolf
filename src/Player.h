@@ -1,7 +1,7 @@
-#ifndef PLAYER_HPP
-#define PLAYER_HPP
+#ifndef PLAYER_H
+#define PLAYER_H
 #include <cstdint>
-#include "Map.hpp"
+#include "Map.h"
 
 class Player {
 public:
