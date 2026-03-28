@@ -74,46 +74,64 @@ bool EnemySprite::decodeColor(char c, Color& out) {
     }
 }
 
-const char* GUN_IDLE[32] = {
-    "................","................",
-    "................","................",
-    "......GGGGG.....","....GBBBBBg.....",
-    ".....GBBBBBg....","......ggggg.....",
-    "......GBBBg.....","......GBBBg.....",
-    "......GBBBg.....","......GBBBg.....",
-    "......GBBBg.....","......GBBBg.....",
-    "......GBBBg.....","....GGGBBBGGg...",
-    "...GBBBBBBBBBG..","...GBBBgggBBBG..",
-    "...GBBGgggGBBG..","...GBBGgggGBBG..",
-    "...GBBGgggGBBG..","...GBBGMMMGBBG..",
-    "...GBBGMMMGBBG..","....gGGMMMGGg...",
-    ".....BBGGGBB....","....BBgggBB.....",
-    ".....BBgggBB....","....BBgggBB.....",
-    ".....gGGGGGg....","................",
-    "................","................",
+const char* GUN_IDLE[24] = {
+/*         0         1         2         3  */
+/* row  0 */ "................................",
+/* row  1 */ "............BBB.................",
+/* row  2 */ "...........BBBBg................",
+/* row  3 */ "...........BBBBg................",
+/* row  4 */ "...........BBBBg................",
+/* row  5 */ "...........BBBBg................",
+/* row  6 */ "...........BBBBg................",
+/* row  7 */ "..........GBBBBGg...............",
+/* row  8 */ ".........GGBBBBGGg..............",
+/* row  9 */ ".........GGBBBBGGg..............",
+/* row 10 */ "........GGGBBBBGGGg.............",
+/* row 11 */ "........GGGBBBBGGGg.............",
+/* row 12 */ "GGGGGGGGGGGBBBBGGGGGGGGGGGGGGGGg",
+/* row 13 */ "GBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg",
+/* row 14 */ "GBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg",
+/* row 15 */ "GBBgggBBBBBBBBBBBBBBBBBBgggBBBBg",
+/* row 16 */ "GBBgggBBMMMMMMMMMMMMMBBBgggBBBg.",
+/* row 17 */ "GBBBBBBBMMMMMMMMMMMMMBBBBBBBBBg.",
+/* row 18 */ "GBBBBBBBMMMMMMMMMMMMMBBBBBBBBBg.",
+/* row 19 */ "GBBBBBBBMMMMMMMMMMMMMBBBBBBBBBg.",
+/* row 20 */ "GBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg",
+/* row 21 */ "..GGGGGGGGGGGGGGGGGGGGGGGGGGGGg.",
+/* row 22 */ "................................",
+/* row 23 */ "................................",
 };
 
-const char* GUN_FIRE[32] = {
-    "......YYYY......",".....YYYYYY.....",
-    "....YYYYYYYY....","....YYYYYYYY....",
-    "......GGGGG.....","....GBBBBBg.....",
-    ".....GBBBBBg....","......ggggg.....",
-    "......GBBBg.....","......GBBBg.....",
-    "......GBBBg.....","......GBBBg.....",
-    "......GBBBg.....","......GBBBg.....",
-    "....GGGBBBGGg...","...GBBBBBBBBBG..",
-    "...GBBBgggBBBG..","...GBBGgggGBBG..",
-    "...GBBGgggGBBG..","...GBBGgggGBBG..",
-    "...GBBGMMMGBBG..","...GBBGMMMGBBG..",
-    "....gGGMMMGGg...","....BBGGGBB.....",
-    ".....BBgggBB....","....BBgggBB.....",
-    ".....BBgggBB....","....gGGGGGg.....",
-    "................","................",
-    "................","................",
+const char* GUN_FIRE[24] = {
+/*         0         1         2         3  */
+/* row  0 */ "..........OYO...................",
+/* row  1 */ ".........OYYYOO.................",
+/* row  2 */ "........OYYYYYYO................",
+/* row  3 */ ".......OYYYYYYYYO...............",
+/* row  4 */ "........OYYYYYO.................",
+/* row  5 */ ".........OYYYY..................",
+/* row  6 */ "...........OBB..................",
+/* row  7 */ "..........GBBBBGg...............",
+/* row  8 */ ".........GGBBBBGGg..............",
+/* row  9 */ ".........GGBBBBGGg..............",
+/* row 10 */ "........GGGBBBBGGGg.............",
+/* row 11 */ "........GGGBBBBGGGg.............",
+/* row 12 */ "GGGGGGGGGGGBBBBGGGGGGGGGGGGGGGGg",
+/* row 13 */ "GBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg",
+/* row 14 */ "GBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg",
+/* row 15 */ "GBBgggBBBBBBBBBBBBBBBBBBgggBBBBg",
+/* row 16 */ "GBBgggBBMMMMMMMMMMMMMBBBgggBBBg.",
+/* row 17 */ "GBBBBBBBMMMMMMMMMMMMMBBBBBBBBBg.",
+/* row 18 */ "GBBBBBBBMMMMMMMMMMMMMBBBBBBBBBg.",
+/* row 19 */ "GBBBBBBBMMMMMMMMMMMMMBBBBBBBBBg.",
+/* row 20 */ "GBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg",
+/* row 21 */ "..GGGGGGGGGGGGGGGGGGGGGGGGGGGGg.",
+/* row 22 */ "................................",
+/* row 23 */ "................................",
 };
 
-Sprite GunSprite::idle()   { return {GUN_IDLE,  16, 32}; }
-Sprite GunSprite::firing() { return {GUN_FIRE,  16, 32}; }
+Sprite GunSprite::idle()   { return {GUN_IDLE,  32, 24}; }
+Sprite GunSprite::firing() { return {GUN_FIRE,  32, 24}; }
 
 bool GunSprite::decodeColor(char c, Color& out) {
     switch(c) {
@@ -122,6 +140,7 @@ bool GunSprite::decodeColor(char c, Color& out) {
         case 'B': out = { 30, 30, 30}; return true;
         case 'M': out = {100, 60, 20}; return true;
         case 'Y': out = {255,230, 50}; return true;
+        case 'O': out = {255,120,  0}; return true;
         default:  return false;
     }
 }
