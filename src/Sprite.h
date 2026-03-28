@@ -19,8 +19,8 @@ struct EnemySprite {
     static bool decodeColor(char c, Color& out);
 };
 
-extern const char* GUN_IDLE[32];
-extern const char* GUN_FIRE[32];
+extern const char* GUN_IDLE[24];
+extern const char* GUN_FIRE[24];
 
 struct GunSprite {
     static Sprite idle();

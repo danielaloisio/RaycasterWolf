@@ -102,7 +102,6 @@ void Renderer::drawEnemies(const Player& p, std::vector<Enemy>& enemies,
 
     for (auto& e : enemies) {
         double dx = e.x - p.x(), dy = e.y - p.y();
-
         double invDet = 1.0 / (planeX * dirY - dirX * planeY);
         double transX =  invDet * ( dirY * dx - dirX * dy);
         double transY =  invDet * (-planeY * dx + planeX * dy);
@@ -114,7 +113,6 @@ void Renderer::drawEnemies(const Player& p, std::vector<Enemy>& enemies,
 
         Sprite spr = (e.state == EnemyState::DEAD)
                    ? EnemySprite::dead() : EnemySprite::alive();
-
         int sprH = std::abs((int)(GameConfig::SCR_H / transY));
         int sprW = sprH;
         int drawStartY = GameConfig::HALF_H - sprH / 2;
@@ -151,9 +149,9 @@ void Renderer::drawEnemies(const Player& p, std::vector<Enemy>& enemies,
 
 void Renderer::drawGun(const Player& p) {
     Sprite spr = p.isFiring() ? GunSprite::firing() : GunSprite::idle();
-    const int SCALE = 6;
-    int offX = GameConfig::SCR_W  / 2 - (spr.width  * SCALE) / 2 + 40;
-    int offY = GameConfig::SCR_H - spr.height * SCALE - 4;
+    const int SCALE = 5;
+    int offX = GameConfig::SCR_W / 2 - (spr.width * SCALE) / 2 + 15;
+    int offY = GameConfig::SCR_H - spr.height * SCALE - (-10);
     for (int row = 0; row < spr.height; ++row) {
         const char* line = spr.rows[row];
         for (int col = 0; col < spr.width && line[col]; ++col) {
